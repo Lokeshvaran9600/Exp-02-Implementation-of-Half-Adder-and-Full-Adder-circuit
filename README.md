@@ -38,17 +38,50 @@ If the output is 1, then the led glows.
 Program:
 /*
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: LOKESHVARAN S
+RegisterNumber:  23012889
 */
-Logic symbol & Truthtable
-RTL realization
-
-### Output:
-### RTL
-### TIMING DIAGRAM
+## Program:
+Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
+Developed by: THAMARAISELVAN V
+RegisterNumber:  212221230115
 
 
-### TRUTH TABLE 
+Half adder program:
 
-### Result:
+module fulladd (a,b,sum,carry);
+input a,b;
+output sum,carry;
+assign sum = (a^b);
+assign carry = (a&b);
+endmodule
+
+Full adder program:
+
+module fulladd (a,b,c,sum,carry);
+input a,b,c;
+output sum,carry;
+assign sum = (a^b^c);
+assign carry = ((a&b)|(a^b)&c);
+endmodule
+## Output:
+## RTL
+Half adder:
+![image](https://github.com/Lokeshvaran9600/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/145972263/7b31d0d3-e505-417d-b9c9-059b032fa11b)
+Full adder:
+
+![image](https://github.com/Lokeshvaran9600/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/145972263/f03a0182-9abf-43cc-8133-69b912c51671)
+## TIMING DIAGRAM:
+Half adder
+
+![image](https://github.com/Lokeshvaran9600/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/145972263/a502b958-f78a-420d-9fa4-26b27dabdc89)
+Full adder
+
+![image](https://github.com/Lokeshvaran9600/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/145972263/6598f104-34ee-4079-9a93-70a8b888be8e)
+## TRUTH TABLE
+Half adder
+![image](https://github.com/Lokeshvaran9600/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/145972263/2585d5f0-7584-4d09-9cc4-285691b44610)
+Full adder
+![image](https://github.com/Lokeshvaran9600/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/145972263/ccbda33b-cf47-4c3b-a80d-41108b450694)
+Result:
+Thus the Implementation of Half Adder and Full Adder circuit are studied and the truth table for different logic gates are verified.
